@@ -43,3 +43,8 @@ Regra de Funcionamento: Os displays acendem com nível lógico 0. Eles devem ser
 1. Entrada: 5 bits do resultado (magnitude + carry). O bit de sinal é isolado e enviado diretamente para um LED específico.
 
 2. Saídas: Controle para 2 displays (dezenas e unidades), projetados para exibir um valor máximo de até 30.
+
+# Imagens:
+<img width="579" height="266" alt="image" src="https://github.com/user-attachments/assets/50d6693b-b60e-4eaf-807b-47c224637711" />
+
+<img width="575" height="227" alt="image" src="https://github.com/user-attachments/assets/43de70b8-5e80-4d66-b735-dba749a91334" />
