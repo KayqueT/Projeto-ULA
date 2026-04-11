@@ -47,4 +47,5 @@ Regra de Funcionamento: Os displays acendem com nível lógico 0. Eles devem ser
 # Imagens:
 <img width="579" height="266" alt="image" src="https://github.com/user-attachments/assets/50d6693b-b60e-4eaf-807b-47c224637711" />
 
-<img width="575" height="227" alt="image" src="https://github.com/user-attachments/assets/43de70b8-5e80-4d66-b735-dba749a91334" />
+<img width="586" height="277" alt="image" src="https://github.com/user-attachments/assets/a6c8e21b-8eb3-405b-9d89-23d942326711" />
+
