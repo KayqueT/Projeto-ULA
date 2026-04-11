@@ -1,7 +1,7 @@
 # Projeto da ULA
 Projeto de Sistemas Digitais do Curso de Engenharia da Computação na UFPE
 
-# Descrição
+# Descrição:
 Objetivo: Desenvolver uma ULA (Unidade Lógica e Aritmética) integrada a um decodificador binário para display de 7 segmentos.
 
 Restrição Principal: O projeto deve ser construído exclusivamente utilizando portas lógicas.
@@ -10,7 +10,7 @@ Software: Intel Quartus Prime 25.1 (para a criação dos diagramas de portas ló
 
 Hardware: Placa de prototipação Altera DE2-115 (equipada com o chip da família Cyclone IV E) para a execução do projeto.
 
-# Grupo
+# Grupo:
 Geovana Pereira ()
 
 Gustavo Franco ()
@@ -19,7 +19,7 @@ João Victor Siqueira ()
 
 Kayque Tavares Marcelino da Costa (ktmc)
 
-# Projeto
+# Projeto:
 # 1. ULA
 
 1. Entradas:
