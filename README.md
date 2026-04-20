@@ -11,9 +11,9 @@ Software: Intel Quartus Prime 25.1 (para a criação dos diagramas de portas ló
 Hardware: Placa de prototipação Altera DE2-115 (equipada com o chip da família Cyclone IV E) para a execução do projeto.
 
 # Grupo:
-Geovana Pereira ()
+Geovana Pereira de Santana Soares (gpss)
 
-Gustavo Franco ()
+Gustavo Franco Pires (gfp)
 
 João Victor Siqueira ()
 
