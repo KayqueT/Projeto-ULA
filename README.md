@@ -51,4 +51,8 @@ Regra de Funcionamento: Os displays acendem com nível lógico 0. Eles devem ser
 
 # Links:
 Tabela da Verdade e Mapa de Karnaugh: https://docs.google.com/spreadsheets/d/1VzDZzGMTBDK7ysYWcsD35G4WGZj6BByjK8DRsoYJKxw/edit?usp=sharing
+<<<<<<< HEAD
 Tabelas e Mapa de Karnaugh para Unidade Aritimética: https://docs.google.com/spreadsheets/d/1-m4WqJ639HKql3GFfasfa7XLne40sfkX79NmtemCtkQ/edit?usp=sharing
+=======
+Tabela da Verdade e Mapa de Karnaugh para Unidade Aritimética: https://docs.google.com/spreadsheets/d/1-m4WqJ639HKql3GFfasfa7XLne40sfkX79NmtemCtkQ/edit?usp=sharing
+>>>>>>> d1787beb81aa57943c0475fb24fff348377f4c08
