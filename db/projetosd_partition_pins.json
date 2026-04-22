@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sinal_led",
+					"strict" : false
+				},
+				{
+					"name" : "D4",
+					"strict" : false
+				},
+				{
+					"name" : "D3",
+					"strict" : false
+				},
+				{
+					"name" : "D2",
+					"strict" : false
+				},
+				{
+					"name" : "D0",
+					"strict" : false
+				},
+				{
+					"name" : "U5",
+					"strict" : false
+				},
+				{
+					"name" : "U3",
+					"strict" : false
+				},
+				{
+					"name" : "U2",
+					"strict" : false
+				},
+				{
+					"name" : "U1",
+					"strict" : false
+				},
+				{
+					"name" : "U0",
+					"strict" : false
+				},
+				{
+					"name" : "B_U0",
+					"strict" : false
+				},
+				{
+					"name" : "B_U2",
+					"strict" : false
+				},
+				{
+					"name" : "B_D3",
+					"strict" : false
+				},
+				{
+					"name" : "B_D0",
+					"strict" : false
+				},
+				{
+					"name" : "B_U4",
+					"strict" : false
+				},
+				{
+					"name" : "B_U3",
+					"strict" : false
+				},
+				{
+					"name" : "B_sinal",
+					"strict" : false
+				},
+				{
+					"name" : "A_D4",
+					"strict" : false
+				},
+				{
+					"name" : "A_D3",
+					"strict" : false
+				},
+				{
+					"name" : "A_D0",
+					"strict" : false
+				},
+				{
+					"name" : "A_U4",
+					"strict" : false
+				},
+				{
+					"name" : "A_U3",
+					"strict" : false
+				},
+				{
+					"name" : "A_sinal",
+					"strict" : false
+				},
+				{
+					"name" : "A_U2",
+					"strict" : false
+				},
+				{
+					"name" : "A_U0",
+					"strict" : false
+				},
+				{
+					"name" : "logico0",
+					"strict" : false
+				},
+				{
+					"name" : "logico1",
+					"strict" : false
+				},
+				{
+					"name" : "logico2",
+					"strict" : false
+				},
+				{
+					"name" : "logico3",
+					"strict" : false
+				},
+				{
+					"name" : "logico4",
+					"strict" : false
+				},
+				{
+					"name" : "status",
+					"strict" : false
+				},
+				{
+					"name" : "S0",
+					"strict" : false
+				},
+				{
+					"name" : "S1",
+					"strict" : false
+				},
+				{
+					"name" : "S2",
+					"strict" : false
+				},
+				{
+					"name" : "B2",
+					"strict" : false
+				},
+				{
+					"name" : "B1",
+					"strict" : false
+				},
+				{
+					"name" : "B0",
+					"strict" : false
+				},
+				{
+					"name" : "B3",
+					"strict" : false
+				},
+				{
+					"name" : "Bs",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "As",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

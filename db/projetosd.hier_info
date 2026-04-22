@@ -1,0 +1,3437 @@
+|projeto
+sinal_led <= deco5_final:inst2.led
+S1 => deco5_final:inst2.S3
+S1 => ULA:inst.S[1]
+S2 => deco5_final:inst2.S2
+S2 => ULA:inst.S[2]
+As => ULA:inst.A[4]
+As => ULA:inst.B[4]
+As => deco_entrada_final:inst1.As
+A3 => ULA:inst.A[3]
+A3 => ULA:inst.B[3]
+A3 => deco_entrada_final:inst1.A3
+A2 => ULA:inst.A[2]
+A2 => ULA:inst.B[2]
+A2 => deco_entrada_final:inst1.A2
+A1 => ULA:inst.A[1]
+A1 => ULA:inst.B[1]
+A1 => deco_entrada_final:inst1.A1
+A0 => ULA:inst.A[0]
+A0 => ULA:inst.B[0]
+A0 => deco_entrada_final:inst1.A0
+S0 => ULA:inst.S[0]
+D6 <= deco5_final:inst2.D6
+D5 <= deco5_final:inst2.D5
+D4 <= deco5_final:inst2.D4
+D3 <= deco5_final:inst2.D3
+D2 <= deco5_final:inst2.D2
+D1 <= deco5_final:inst2.D1
+D0 <= deco5_final:inst2.D0
+U6 <= deco5_final:inst2.U6
+U5 <= deco5_final:inst2.U5
+U4 <= deco5_final:inst2.U4
+U3 <= deco5_final:inst2.U3
+U2 <= deco5_final:inst2.U2
+U1 <= deco5_final:inst2.U1
+U0 <= deco5_final:inst2.U0
+B_U0 <= deco_entrada_final:inst3.U0
+B3 => deco_entrada_final:inst3.A3
+B2 => deco_entrada_final:inst3.A2
+B1 => deco_entrada_final:inst3.A1
+B0 => deco_entrada_final:inst3.A0
+Bs => deco_entrada_final:inst3.As
+B_U1 <= deco_entrada_final:inst3.U1
+B_U2 <= deco_entrada_final:inst3.U2
+B_D6 <= deco_entrada_final:inst3.D6
+B_D5 <= deco_entrada_final:inst3.D5
+B_D3 <= deco_entrada_final:inst3.D3
+B_D2 <= deco_entrada_final:inst3.D2
+B_D1 <= deco_entrada_final:inst3.D1
+B_D0 <= deco_entrada_final:inst3.d0
+B_U5 <= deco_entrada_final:inst3.U5
+B_U4 <= deco_entrada_final:inst3.U4
+B_U3 <= deco_entrada_final:inst3.U3
+B_sinal <= deco_entrada_final:inst3.les
+A_D6 <= deco_entrada_final:inst1.D6
+A_D5 <= deco_entrada_final:inst1.D5
+A_D4 <= deco_entrada_final:inst1.D4
+A_D3 <= deco_entrada_final:inst1.D3
+A_D2 <= deco_entrada_final:inst1.D2
+A_D1 <= deco_entrada_final:inst1.D1
+A_D0 <= deco_entrada_final:inst1.d0
+A_U6 <= deco_entrada_final:inst1.U6
+A_U5 <= deco_entrada_final:inst1.U5
+A_U4 <= deco_entrada_final:inst1.U4
+A_U3 <= deco_entrada_final:inst1.U3
+A_sinal <= deco_entrada_final:inst1.les
+A_U2 <= deco_entrada_final:inst1.U2
+A_U1 <= deco_entrada_final:inst1.U1
+A_U0 <= deco_entrada_final:inst1.U0
+B_U6 <= deco_entrada_final:inst3.U6
+B_D4 <= <GND>
+logico0 <= ULA:inst.Logico[0]
+logico1 <= ULA:inst.Logico[1]
+logico2 <= ULA:inst.Logico[2]
+logico3 <= ULA:inst.Logico[3]
+logico4 <= ULA:inst.Logico[4]
+logico5 <= ULA:inst.Logico[5]
+status <= ULA:inst.status
+
+
+|projeto|deco5_final:inst2
+D6 <= MUX_d:inst1.F13
+S3 => MUX_d:inst1.S3
+S2 => MUX_d:inst1.S2
+A4 => decodificar_S:inst.S4
+A3 => decodificar_S:inst.S3
+A2 => decodificar_S:inst.S2
+A1 => decodificar_S:inst.S1
+A0 => decodificar_S:inst.S0
+U0 <= MUX_d:inst1.F0
+U1 <= MUX_d:inst1.F1
+U2 <= MUX_d:inst1.F2
+U3 <= MUX_d:inst1.F3
+U4 <= MUX_d:inst1.F4
+U5 <= MUX_d:inst1.F5
+U6 <= MUX_d:inst1.F6
+D0 <= MUX_d:inst1.F7
+D1 <= MUX_d:inst1.F8
+D2 <= MUX_d:inst1.F9
+D3 <= MUX_d:inst1.F10
+D4 <= MUX_d:inst1.F11
+D5 <= MUX_d:inst1.F12
+led <= sinal:inst2.Fs
+As => sinal:inst2.As
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1
+F0 <= mux_1bit:inst31.F
+S3 => inst4.IN0
+S2 => inst5.IN0
+F_dd[13] => mux_1bit:inst.A_1
+F_dd[12] => mux_1bit:inst2.A_1
+F_dd[11] => mux_1bit:inst6.A_1
+F_dd[10] => mux_1bit:inst7.A_1
+F_dd[9] => mux_1bit:inst8.A_1
+F_dd[8] => mux_1bit:inst9.A_1
+F_dd[7] => mux_1bit:inst10.A_1
+F_dd[6] => mux_1bit:inst12.A_1
+F_dd[5] => mux_1bit:inst11.A_1
+F_dd[4] => mux_1bit:inst13.A_1
+F_dd[3] => mux_1bit:inst14.A_1
+F_dd[2] => mux_1bit:inst15.A_1
+F_dd[1] => mux_1bit:inst16.A_1
+F_dd[0] => mux_1bit:inst31.A_1
+F1 <= mux_1bit:inst16.F
+F2 <= mux_1bit:inst15.F
+F3 <= mux_1bit:inst14.F
+F4 <= mux_1bit:inst13.F
+F5 <= mux_1bit:inst11.F
+F6 <= <GND>
+F7 <= mux_1bit:inst10.F
+F8 <= <GND>
+F9 <= mux_1bit:inst8.F
+F10 <= mux_1bit:inst7.F
+F11 <= mux_1bit:inst6.F
+F12 <= <GND>
+F13 <= <GND>
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst31
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst16
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst15
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst14
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst13
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst11
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst10
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst8
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst7
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst6
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst12
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst2
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|MUX_d:inst1|mux_1bit:inst9
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst
+D[13] <= decodificador4bits:inst6.S6
+D[12] <= decodificador4bits:inst6.S5
+D[11] <= decodificador4bits:inst6.S4
+D[10] <= decodificador4bits:inst6.S3
+D[9] <= decodificador4bits:inst6.S2
+D[8] <= decodificador4bits:inst6.S1
+D[7] <= decodificador4bits:inst6.S0
+D[6] <= decodificador4bits:inst.S6
+D[5] <= decodificador4bits:inst.S5
+D[4] <= decodificador4bits:inst.S4
+D[3] <= decodificador4bits:inst.S3
+D[2] <= decodificador4bits:inst.S2
+D[1] <= decodificador4bits:inst.S1
+D[0] <= decodificador4bits:inst.S0
+S4 => dd:inst1.A2
+S3 => dd:inst1.A1
+S2 => dd:inst1.A0
+S1 => dd:inst3.A0
+S0 => dd:inst4.A0
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|decodificador4bits:inst6
+S3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst19.IN0
+A0 => inst20.IN0
+A0 => inst18.IN0
+A0 => inst3.IN0
+A0 => inst11.IN0
+A0 => inst8.IN0
+A0 => inst15.IN0
+A1 => inst19.IN1
+A1 => inst2.IN0
+A1 => inst18.IN1
+A1 => inst21.IN1
+A1 => inst11.IN1
+A1 => inst10.IN1
+A1 => inst14.IN1
+A1 => inst13.IN1
+A1 => inst15.IN1
+A1 => inst4.IN1
+A1 => inst6.IN1
+A2 => inst1.IN0
+A2 => inst18.IN2
+A2 => inst21.IN2
+A2 => inst17.IN2
+A2 => inst11.IN2
+A2 => inst9.IN2
+A2 => inst10.IN2
+A2 => inst14.IN2
+A2 => inst13.IN2
+A2 => inst15.IN2
+A2 => inst5.IN1
+A2 => inst6.IN2
+A3 => inst19.IN3
+A3 => dif.IN0
+A3 => inst21.IN3
+A3 => inst11.IN3
+A3 => inst10.IN3
+A3 => inst15.IN3
+A3 => inst5.IN2
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= <GND>
+S6 <= <GND>
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1
+F3 <= MUX_5:inst3.F0
+A3 => com_5:inst.A3
+A3 => somar3:inst2.A3
+A3 => MUX_5:inst3.B[3]
+A2 => com_5:inst.A2
+A2 => somar3:inst2.A2
+A2 => MUX_5:inst3.B[2]
+A1 => com_5:inst.A1
+A1 => somar3:inst2.A1
+A1 => MUX_5:inst3.B[1]
+A0 => com_5:inst.A0
+A0 => somar3:inst2.A0
+A0 => MUX_5:inst3.B[0]
+F1 <= MUX_5:inst3.F2
+F0 <= MUX_5:inst3.F3
+F2 <= MUX_5:inst3.F1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|MUX_5:inst3
+F0 <= mux_1bit:inst3.F
+maiorouigual => mux_1bit:inst3.S
+maiorouigual => mux_1bit:inst2.S
+maiorouigual => mux_1bit:inst.S
+maiorouigual => mux_1bit:inst1.S
+A_soma[3] => mux_1bit:inst.A_1
+A_soma[2] => mux_1bit:inst1.A_1
+A_soma[1] => mux_1bit:inst2.A_1
+A_soma[0] => mux_1bit:inst3.A_1
+B[3] => mux_1bit:inst.B_0
+B[2] => mux_1bit:inst1.B_0
+B[1] => mux_1bit:inst2.B_0
+B[0] => mux_1bit:inst3.B_0
+F1 <= mux_1bit:inst2.F
+F2 <= <GND>
+F3 <= mux_1bit:inst.F
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|MUX_5:inst3|mux_1bit:inst3
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|MUX_5:inst3|mux_1bit:inst2
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|MUX_5:inst3|mux_1bit:inst
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|MUX_5:inst3|mux_1bit:inst1
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|com_5:inst
+maiorouigual <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst.IN1
+A1 => inst7.IN1
+A1 => inst6.IN0
+A0 => inst.IN3
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|somar3:inst2
+F[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= soma_1:inst3.S
+F[1] <= soma_1:inst2.S
+F[0] <= soma_1:inst1.S
+A0 => soma_1:inst1.A
+A1 => soma_1:inst2.A
+A2 => soma_1:inst3.A
+A3 => soma_1:inst.A
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|somar3:inst2|soma_1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|somar3:inst2|soma_1:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|somar3:inst2|soma_1:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst1|somar3:inst2|soma_1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3
+F3 <= MUX_5:inst3.F0
+A3 => com_5:inst.A3
+A3 => somar3:inst2.A3
+A3 => MUX_5:inst3.B[3]
+A2 => com_5:inst.A2
+A2 => somar3:inst2.A2
+A2 => MUX_5:inst3.B[2]
+A1 => com_5:inst.A1
+A1 => somar3:inst2.A1
+A1 => MUX_5:inst3.B[1]
+A0 => com_5:inst.A0
+A0 => somar3:inst2.A0
+A0 => MUX_5:inst3.B[0]
+F1 <= MUX_5:inst3.F2
+F0 <= MUX_5:inst3.F3
+F2 <= MUX_5:inst3.F1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|MUX_5:inst3
+F0 <= mux_1bit:inst3.F
+maiorouigual => mux_1bit:inst3.S
+maiorouigual => mux_1bit:inst2.S
+maiorouigual => mux_1bit:inst.S
+maiorouigual => mux_1bit:inst1.S
+A_soma[3] => mux_1bit:inst.A_1
+A_soma[2] => mux_1bit:inst1.A_1
+A_soma[1] => mux_1bit:inst2.A_1
+A_soma[0] => mux_1bit:inst3.A_1
+B[3] => mux_1bit:inst.B_0
+B[2] => mux_1bit:inst1.B_0
+B[1] => mux_1bit:inst2.B_0
+B[0] => mux_1bit:inst3.B_0
+F1 <= mux_1bit:inst2.F
+F2 <= <GND>
+F3 <= mux_1bit:inst.F
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|MUX_5:inst3|mux_1bit:inst3
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|MUX_5:inst3|mux_1bit:inst2
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|MUX_5:inst3|mux_1bit:inst
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|MUX_5:inst3|mux_1bit:inst1
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|com_5:inst
+maiorouigual <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst.IN1
+A1 => inst7.IN1
+A1 => inst6.IN0
+A0 => inst.IN3
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|somar3:inst2
+F[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= soma_1:inst3.S
+F[1] <= soma_1:inst2.S
+F[0] <= soma_1:inst1.S
+A0 => soma_1:inst1.A
+A1 => soma_1:inst2.A
+A2 => soma_1:inst3.A
+A3 => soma_1:inst.A
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|somar3:inst2|soma_1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|somar3:inst2|soma_1:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|somar3:inst2|soma_1:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst3|somar3:inst2|soma_1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|decodificador4bits:inst
+S3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst19.IN0
+A0 => inst20.IN0
+A0 => inst18.IN0
+A0 => inst3.IN0
+A0 => inst11.IN0
+A0 => inst8.IN0
+A0 => inst15.IN0
+A1 => inst19.IN1
+A1 => inst2.IN0
+A1 => inst18.IN1
+A1 => inst21.IN1
+A1 => inst11.IN1
+A1 => inst10.IN1
+A1 => inst14.IN1
+A1 => inst13.IN1
+A1 => inst15.IN1
+A1 => inst4.IN1
+A1 => inst6.IN1
+A2 => inst1.IN0
+A2 => inst18.IN2
+A2 => inst21.IN2
+A2 => inst17.IN2
+A2 => inst11.IN2
+A2 => inst9.IN2
+A2 => inst10.IN2
+A2 => inst14.IN2
+A2 => inst13.IN2
+A2 => inst15.IN2
+A2 => inst5.IN1
+A2 => inst6.IN2
+A3 => inst19.IN3
+A3 => dif.IN0
+A3 => inst21.IN3
+A3 => inst11.IN3
+A3 => inst10.IN3
+A3 => inst15.IN3
+A3 => inst5.IN2
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= <GND>
+S6 <= <GND>
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4
+F3 <= MUX_5:inst3.F0
+A3 => com_5:inst.A3
+A3 => somar3:inst2.A3
+A3 => MUX_5:inst3.B[3]
+A2 => com_5:inst.A2
+A2 => somar3:inst2.A2
+A2 => MUX_5:inst3.B[2]
+A1 => com_5:inst.A1
+A1 => somar3:inst2.A1
+A1 => MUX_5:inst3.B[1]
+A0 => com_5:inst.A0
+A0 => somar3:inst2.A0
+A0 => MUX_5:inst3.B[0]
+F1 <= MUX_5:inst3.F2
+F0 <= MUX_5:inst3.F3
+F2 <= MUX_5:inst3.F1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|MUX_5:inst3
+F0 <= mux_1bit:inst3.F
+maiorouigual => mux_1bit:inst3.S
+maiorouigual => mux_1bit:inst2.S
+maiorouigual => mux_1bit:inst.S
+maiorouigual => mux_1bit:inst1.S
+A_soma[3] => mux_1bit:inst.A_1
+A_soma[2] => mux_1bit:inst1.A_1
+A_soma[1] => mux_1bit:inst2.A_1
+A_soma[0] => mux_1bit:inst3.A_1
+B[3] => mux_1bit:inst.B_0
+B[2] => mux_1bit:inst1.B_0
+B[1] => mux_1bit:inst2.B_0
+B[0] => mux_1bit:inst3.B_0
+F1 <= mux_1bit:inst2.F
+F2 <= <GND>
+F3 <= mux_1bit:inst.F
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|MUX_5:inst3|mux_1bit:inst3
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|MUX_5:inst3|mux_1bit:inst2
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|MUX_5:inst3|mux_1bit:inst
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|MUX_5:inst3|mux_1bit:inst1
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|com_5:inst
+maiorouigual <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst.IN1
+A1 => inst7.IN1
+A1 => inst6.IN0
+A0 => inst.IN3
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|somar3:inst2
+F[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= soma_1:inst3.S
+F[1] <= soma_1:inst2.S
+F[0] <= soma_1:inst1.S
+A0 => soma_1:inst1.A
+A1 => soma_1:inst2.A
+A2 => soma_1:inst3.A
+A3 => soma_1:inst.A
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|somar3:inst2|soma_1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|somar3:inst2|soma_1:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|somar3:inst2|soma_1:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|decodificar_S:inst|dd:inst4|somar3:inst2|soma_1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco5_final:inst2|sinal:inst2
+Fs <= As.DB_MAX_OUTPUT_PORT_TYPE
+As => Fs.DATAIN
+
+
+|projeto|ULA:inst
+status <= mux_comparadorfinal_sinal:inst.Status
+A[0] => UnidadeAritimetica:inst3.A_M0
+A[0] => UnidadeAritimetica:inst2.A_M0
+A[0] => UnidadeAritimetica:inst14.A_M0
+A[0] => igual5bitss:inst7.A[0]
+A[0] => maior5sign:inst1.A[0]
+A[0] => menor5sign:inst5.A[0]
+A[0] => and5bit:inst8.A[0]
+A[0] => xor5bit:inst10.A[0]
+A[1] => UnidadeAritimetica:inst3.A_M1
+A[1] => UnidadeAritimetica:inst2.A_M1
+A[1] => UnidadeAritimetica:inst14.A_M1
+A[1] => igual5bitss:inst7.A[1]
+A[1] => maior5sign:inst1.A[1]
+A[1] => menor5sign:inst5.A[1]
+A[1] => and5bit:inst8.A[1]
+A[1] => xor5bit:inst10.A[1]
+A[2] => UnidadeAritimetica:inst3.A_M2
+A[2] => UnidadeAritimetica:inst2.A_M2
+A[2] => UnidadeAritimetica:inst14.A_M2
+A[2] => igual5bitss:inst7.A[2]
+A[2] => maior5sign:inst1.A[2]
+A[2] => menor5sign:inst5.A[2]
+A[2] => and5bit:inst8.A[2]
+A[2] => xor5bit:inst10.A[2]
+A[3] => UnidadeAritimetica:inst3.A_M3
+A[3] => UnidadeAritimetica:inst2.A_M3
+A[3] => UnidadeAritimetica:inst14.A_M3
+A[3] => igual5bitss:inst7.A[3]
+A[3] => maior5sign:inst1.A[3]
+A[3] => menor5sign:inst5.A[3]
+A[3] => and5bit:inst8.A[3]
+A[3] => xor5bit:inst10.A[3]
+A[4] => UnidadeAritimetica:inst3.A_S
+A[4] => UnidadeAritimetica:inst2.A_S
+A[4] => UnidadeAritimetica:inst14.A_S
+A[4] => igual5bitss:inst7.A[4]
+A[4] => maior5sign:inst1.A[4]
+A[4] => menor5sign:inst5.A[4]
+A[4] => and5bit:inst8.A[4]
+A[4] => xor5bit:inst10.A[4]
+B[0] => UnidadeAritimetica:inst3.B_M0
+B[0] => UnidadeAritimetica:inst2.B_M0
+B[0] => UnidadeAritimetica:inst14.B_M0
+B[0] => igual5bitss:inst7.B[0]
+B[0] => maior5sign:inst1.B[0]
+B[0] => menor5sign:inst5.B[0]
+B[0] => and5bit:inst8.B[0]
+B[0] => xor5bit:inst10.B[0]
+B[1] => UnidadeAritimetica:inst3.B_M1
+B[1] => UnidadeAritimetica:inst2.B_M1
+B[1] => UnidadeAritimetica:inst14.B_M1
+B[1] => igual5bitss:inst7.B[1]
+B[1] => maior5sign:inst1.B[1]
+B[1] => menor5sign:inst5.B[1]
+B[1] => and5bit:inst8.B[1]
+B[1] => xor5bit:inst10.B[1]
+B[2] => UnidadeAritimetica:inst3.B_M2
+B[2] => UnidadeAritimetica:inst2.B_M2
+B[2] => UnidadeAritimetica:inst14.B_M2
+B[2] => igual5bitss:inst7.B[2]
+B[2] => maior5sign:inst1.B[2]
+B[2] => menor5sign:inst5.B[2]
+B[2] => and5bit:inst8.B[2]
+B[2] => xor5bit:inst10.B[2]
+B[3] => UnidadeAritimetica:inst3.B_M3
+B[3] => UnidadeAritimetica:inst2.B_M3
+B[3] => UnidadeAritimetica:inst14.B_M3
+B[3] => igual5bitss:inst7.B[3]
+B[3] => maior5sign:inst1.B[3]
+B[3] => menor5sign:inst5.B[3]
+B[3] => and5bit:inst8.B[3]
+B[3] => xor5bit:inst10.B[3]
+B[4] => UnidadeAritimetica:inst3.B_S
+B[4] => UnidadeAritimetica:inst2.B_S
+B[4] => UnidadeAritimetica:inst14.B_S
+B[4] => igual5bitss:inst7.B[4]
+B[4] => maior5sign:inst1.B[4]
+B[4] => menor5sign:inst5.B[4]
+B[4] => and5bit:inst8.B[4]
+B[4] => xor5bit:inst10.B[4]
+S[0] => mux_comparadorfinal_sinal:inst.S[0]
+S[1] => mux_comparadorfinal_sinal:inst.S[1]
+S[2] => mux_comparadorfinal_sinal:inst.S[2]
+sinal <= mux_comparadorfinal_sinal:inst.Sinal
+Logico[0] <= mux_comparadorfinal_sinal:inst.Logico[0]
+Logico[1] <= mux_comparadorfinal_sinal:inst.Logico[1]
+Logico[2] <= mux_comparadorfinal_sinal:inst.Logico[2]
+Logico[3] <= mux_comparadorfinal_sinal:inst.Logico[3]
+Logico[4] <= mux_comparadorfinal_sinal:inst.Logico[4]
+Logico[5] <= mux_comparadorfinal_sinal:inst.Logico[5]
+modulo[0] <= mux_comparadorfinal_sinal:inst.modulo[0]
+modulo[1] <= mux_comparadorfinal_sinal:inst.modulo[1]
+modulo[2] <= mux_comparadorfinal_sinal:inst.modulo[2]
+modulo[3] <= mux_comparadorfinal_sinal:inst.modulo[3]
+modulo[4] <= mux_comparadorfinal_sinal:inst.modulo[4]
+
+
+|projeto|ULA:inst|mux_comparadorfinal_sinal:inst
+Sinal <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Sinal_sub => inst7.IN0
+S[0] => inst7.IN1
+S[0] => inst2.IN0
+S[0] => inst10.IN1
+S[0] => inst25.IN1
+S[0] => inst21.IN1
+S[0] => inst22.IN1
+S[0] => inst23.IN1
+S[0] => inst24.IN1
+S[0] => inst26.IN1
+S[0] => inst27.IN1
+S[0] => inst40.IN1
+S[0] => inst39.IN1
+S[0] => inst20.IN1
+S[0] => inst17.IN1
+S[0] => inst16.IN1
+S[1] => inst1.IN0
+S[1] => inst12.IN2
+S[1] => inst25.IN2
+S[1] => inst21.IN2
+S[1] => inst28.IN2
+S[1] => inst22.IN2
+S[1] => inst29.IN2
+S[1] => inst23.IN2
+S[1] => inst30.IN2
+S[1] => inst24.IN2
+S[1] => inst31.IN2
+S[1] => inst26.IN2
+S[1] => inst32.IN2
+S[1] => inst27.IN2
+S[1] => inst33.IN2
+S[1] => inst15.IN2
+S[1] => inst14.IN2
+S[1] => inst3.IN2
+S[1] => inst4.IN2
+S[1] => inst5.IN2
+S[2] => inst13.IN0
+S[2] => inst9.IN3
+S[2] => inst10.IN3
+S[2] => inst21.IN3
+S[2] => inst28.IN3
+S[2] => inst22.IN3
+S[2] => inst29.IN3
+S[2] => inst23.IN3
+S[2] => inst30.IN3
+S[2] => inst24.IN3
+S[2] => inst31.IN3
+S[2] => inst26.IN3
+S[2] => inst32.IN3
+S[2] => inst27.IN3
+S[2] => inst33.IN3
+Sinal_soma => inst6.IN0
+Sinal_comp => inst12.IN0
+Status <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+maior => inst9.IN0
+menor => inst10.IN0
+igual => inst25.IN0
+Logico[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Logico[1] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+Logico[2] <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+Logico[3] <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+Logico[4] <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+Logico[5] <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+log_xor[0] => inst21.IN0
+log_xor[1] => inst22.IN0
+log_xor[2] => inst23.IN0
+log_xor[3] => inst24.IN0
+log_xor[4] => inst26.IN0
+log_xor[5] => inst27.IN0
+log_and[0] => inst28.IN0
+log_and[1] => inst29.IN0
+log_and[2] => inst30.IN0
+log_and[3] => inst31.IN0
+log_and[4] => inst32.IN0
+log_and[5] => inst33.IN0
+modulo[0] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+modulo[1] <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+modulo[2] <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+modulo[3] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+modulo[4] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Sub[0] => inst16.IN0
+Sub[1] => inst17.IN0
+Sub[2] => inst20.IN0
+Sub[3] => inst39.IN0
+Sub[4] => inst40.IN0
+Comp2[0] => inst5.IN0
+Comp2[1] => inst4.IN0
+Comp2[2] => inst3.IN0
+Comp2[3] => inst14.IN0
+Comp2[4] => inst15.IN0
+Soma[0] => inst42.IN0
+Soma[1] => inst43.IN0
+Soma[2] => inst44.IN0
+Soma[3] => inst45.IN0
+Soma[4] => inst41.IN0
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3
+F_SINAL <= conversorSaida:inst3.SinalFinal
+A_M3 => conversorEntrada:inst5.M3
+A_M2 => conversorEntrada:inst5.M2
+A_M1 => conversorEntrada:inst5.M1
+A_M0 => conversorEntrada:inst5.M0
+A_S => conversorEntrada:inst5.S
+B_M3 => conversorEntrada:inst4.M3
+B_M2 => conversorEntrada:inst4.M2
+B_M1 => conversorEntrada:inst4.M1
+B_M0 => conversorEntrada:inst4.M0
+B_S => conversorEntrada:inst4.S
+S[0] => nucleoAritimetico:inst.S0
+S[1] => nucleoAritimetico:inst.S1
+S[2] => nucleoAritimetico:inst.S2
+F4 <= conversorSaida:inst3.Mag4
+F3 <= conversorSaida:inst3.Mag3
+F2 <= conversorSaida:inst3.Mag2
+F1 <= conversorSaida:inst3.Mag1
+F0 <= conversorSaida:inst3.Mag0
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorSaida:inst3
+SinalFinal <= R5_sinal.DB_MAX_OUTPUT_PORT_TYPE
+R5_sinal => SinalFinal.DATAIN
+R5_sinal => x0.IN0
+R5_sinal => x1.IN0
+R5_sinal => x2.IN0
+R5_sinal => x3.IN0
+R5_sinal => x4.IN0
+R5_sinal => somador1bit:inst.Cin
+Mag4 <= somador1bit:inst4.S
+R4 => x0.IN1
+R3 => x1.IN1
+R2 => x2.IN1
+R1 => x3.IN1
+R0 => x4.IN1
+Mag3 <= somador1bit:inst3.S
+Mag2 <= somador1bit:inst2.S
+Mag1 <= somador1bit:inst1.S
+Mag0 <= somador1bit:inst.S
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorSaida:inst3|somador1bit:inst4
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorSaida:inst3|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorSaida:inst3|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorSaida:inst3|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorSaida:inst3|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|nucleoAritimetico:inst
+R5 <= somador1bit:inst20.S
+A4 => inst16.IN0
+A4 => inst15.IN0
+S2 => inst18.IN0
+B4 => inst9.IN0
+B4 => inst10.IN0
+S0 => inst17.IN0
+S1 => inst17.IN1
+R4 <= somador1bit:inst19.S
+A3 => inst11.IN0
+B3 => inst.IN0
+R3 <= somador1bit:inst5.S
+A2 => inst12.IN0
+B2 => inst6.IN0
+R2 <= somador1bit:inst4.S
+A1 => inst13.IN0
+B1 => inst7.IN0
+R1 <= somador1bit:inst3.S
+A0 => inst14.IN0
+B0 => inst8.IN0
+R0 <= somador1bit:inst2.S
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|nucleoAritimetico:inst|somador1bit:inst20
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|nucleoAritimetico:inst|somador1bit:inst19
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|nucleoAritimetico:inst|somador1bit:inst5
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|nucleoAritimetico:inst|somador1bit:inst4
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|nucleoAritimetico:inst|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|nucleoAritimetico:inst|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst5
+C3 <= somador1bit:inst.S
+S => inst11.IN0
+S => inst4.IN0
+S => inst5.IN0
+S => inst6.IN0
+S => CSinal.DATAIN
+M3 => inst11.IN1
+M2 => inst4.IN1
+M1 => inst5.IN1
+M0 => inst6.IN1
+M0 => somador1bit:inst3.Cin
+C2 <= somador1bit:inst1.S
+C1 <= somador1bit:inst2.S
+C0 <= somador1bit:inst3.S
+CSinal <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst5|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst5|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst5|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst5|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst4
+C3 <= somador1bit:inst.S
+S => inst11.IN0
+S => inst4.IN0
+S => inst5.IN0
+S => inst6.IN0
+S => CSinal.DATAIN
+M3 => inst11.IN1
+M2 => inst4.IN1
+M1 => inst5.IN1
+M0 => inst6.IN1
+M0 => somador1bit:inst3.Cin
+C2 <= somador1bit:inst1.S
+C1 <= somador1bit:inst2.S
+C0 <= somador1bit:inst3.S
+CSinal <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst4|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst4|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst4|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst3|conversorEntrada:inst4|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2
+F_SINAL <= conversorSaida:inst3.SinalFinal
+A_M3 => conversorEntrada:inst5.M3
+A_M2 => conversorEntrada:inst5.M2
+A_M1 => conversorEntrada:inst5.M1
+A_M0 => conversorEntrada:inst5.M0
+A_S => conversorEntrada:inst5.S
+B_M3 => conversorEntrada:inst4.M3
+B_M2 => conversorEntrada:inst4.M2
+B_M1 => conversorEntrada:inst4.M1
+B_M0 => conversorEntrada:inst4.M0
+B_S => conversorEntrada:inst4.S
+S[0] => nucleoAritimetico:inst.S0
+S[1] => nucleoAritimetico:inst.S1
+S[2] => nucleoAritimetico:inst.S2
+F4 <= conversorSaida:inst3.Mag4
+F3 <= conversorSaida:inst3.Mag3
+F2 <= conversorSaida:inst3.Mag2
+F1 <= conversorSaida:inst3.Mag1
+F0 <= conversorSaida:inst3.Mag0
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorSaida:inst3
+SinalFinal <= R5_sinal.DB_MAX_OUTPUT_PORT_TYPE
+R5_sinal => SinalFinal.DATAIN
+R5_sinal => x0.IN0
+R5_sinal => x1.IN0
+R5_sinal => x2.IN0
+R5_sinal => x3.IN0
+R5_sinal => x4.IN0
+R5_sinal => somador1bit:inst.Cin
+Mag4 <= somador1bit:inst4.S
+R4 => x0.IN1
+R3 => x1.IN1
+R2 => x2.IN1
+R1 => x3.IN1
+R0 => x4.IN1
+Mag3 <= somador1bit:inst3.S
+Mag2 <= somador1bit:inst2.S
+Mag1 <= somador1bit:inst1.S
+Mag0 <= somador1bit:inst.S
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorSaida:inst3|somador1bit:inst4
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorSaida:inst3|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorSaida:inst3|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorSaida:inst3|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorSaida:inst3|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|nucleoAritimetico:inst
+R5 <= somador1bit:inst20.S
+A4 => inst16.IN0
+A4 => inst15.IN0
+S2 => inst18.IN0
+B4 => inst9.IN0
+B4 => inst10.IN0
+S0 => inst17.IN0
+S1 => inst17.IN1
+R4 <= somador1bit:inst19.S
+A3 => inst11.IN0
+B3 => inst.IN0
+R3 <= somador1bit:inst5.S
+A2 => inst12.IN0
+B2 => inst6.IN0
+R2 <= somador1bit:inst4.S
+A1 => inst13.IN0
+B1 => inst7.IN0
+R1 <= somador1bit:inst3.S
+A0 => inst14.IN0
+B0 => inst8.IN0
+R0 <= somador1bit:inst2.S
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|nucleoAritimetico:inst|somador1bit:inst20
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|nucleoAritimetico:inst|somador1bit:inst19
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|nucleoAritimetico:inst|somador1bit:inst5
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|nucleoAritimetico:inst|somador1bit:inst4
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|nucleoAritimetico:inst|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|nucleoAritimetico:inst|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst5
+C3 <= somador1bit:inst.S
+S => inst11.IN0
+S => inst4.IN0
+S => inst5.IN0
+S => inst6.IN0
+S => CSinal.DATAIN
+M3 => inst11.IN1
+M2 => inst4.IN1
+M1 => inst5.IN1
+M0 => inst6.IN1
+M0 => somador1bit:inst3.Cin
+C2 <= somador1bit:inst1.S
+C1 <= somador1bit:inst2.S
+C0 <= somador1bit:inst3.S
+CSinal <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst5|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst5|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst5|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst5|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst4
+C3 <= somador1bit:inst.S
+S => inst11.IN0
+S => inst4.IN0
+S => inst5.IN0
+S => inst6.IN0
+S => CSinal.DATAIN
+M3 => inst11.IN1
+M2 => inst4.IN1
+M1 => inst5.IN1
+M0 => inst6.IN1
+M0 => somador1bit:inst3.Cin
+C2 <= somador1bit:inst1.S
+C1 <= somador1bit:inst2.S
+C0 <= somador1bit:inst3.S
+CSinal <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst4|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst4|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst4|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst2|conversorEntrada:inst4|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14
+F_SINAL <= conversorSaida:inst3.SinalFinal
+A_M3 => conversorEntrada:inst5.M3
+A_M2 => conversorEntrada:inst5.M2
+A_M1 => conversorEntrada:inst5.M1
+A_M0 => conversorEntrada:inst5.M0
+A_S => conversorEntrada:inst5.S
+B_M3 => conversorEntrada:inst4.M3
+B_M2 => conversorEntrada:inst4.M2
+B_M1 => conversorEntrada:inst4.M1
+B_M0 => conversorEntrada:inst4.M0
+B_S => conversorEntrada:inst4.S
+S[0] => nucleoAritimetico:inst.S0
+S[1] => nucleoAritimetico:inst.S1
+S[2] => nucleoAritimetico:inst.S2
+F4 <= conversorSaida:inst3.Mag4
+F3 <= conversorSaida:inst3.Mag3
+F2 <= conversorSaida:inst3.Mag2
+F1 <= conversorSaida:inst3.Mag1
+F0 <= conversorSaida:inst3.Mag0
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorSaida:inst3
+SinalFinal <= R5_sinal.DB_MAX_OUTPUT_PORT_TYPE
+R5_sinal => SinalFinal.DATAIN
+R5_sinal => x0.IN0
+R5_sinal => x1.IN0
+R5_sinal => x2.IN0
+R5_sinal => x3.IN0
+R5_sinal => x4.IN0
+R5_sinal => somador1bit:inst.Cin
+Mag4 <= somador1bit:inst4.S
+R4 => x0.IN1
+R3 => x1.IN1
+R2 => x2.IN1
+R1 => x3.IN1
+R0 => x4.IN1
+Mag3 <= somador1bit:inst3.S
+Mag2 <= somador1bit:inst2.S
+Mag1 <= somador1bit:inst1.S
+Mag0 <= somador1bit:inst.S
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorSaida:inst3|somador1bit:inst4
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorSaida:inst3|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorSaida:inst3|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorSaida:inst3|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorSaida:inst3|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|nucleoAritimetico:inst
+R5 <= somador1bit:inst20.S
+A4 => inst16.IN0
+A4 => inst15.IN0
+S2 => inst18.IN0
+B4 => inst9.IN0
+B4 => inst10.IN0
+S0 => inst17.IN0
+S1 => inst17.IN1
+R4 <= somador1bit:inst19.S
+A3 => inst11.IN0
+B3 => inst.IN0
+R3 <= somador1bit:inst5.S
+A2 => inst12.IN0
+B2 => inst6.IN0
+R2 <= somador1bit:inst4.S
+A1 => inst13.IN0
+B1 => inst7.IN0
+R1 <= somador1bit:inst3.S
+A0 => inst14.IN0
+B0 => inst8.IN0
+R0 <= somador1bit:inst2.S
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|nucleoAritimetico:inst|somador1bit:inst20
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|nucleoAritimetico:inst|somador1bit:inst19
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|nucleoAritimetico:inst|somador1bit:inst5
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|nucleoAritimetico:inst|somador1bit:inst4
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|nucleoAritimetico:inst|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|nucleoAritimetico:inst|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst5
+C3 <= somador1bit:inst.S
+S => inst11.IN0
+S => inst4.IN0
+S => inst5.IN0
+S => inst6.IN0
+S => CSinal.DATAIN
+M3 => inst11.IN1
+M2 => inst4.IN1
+M1 => inst5.IN1
+M0 => inst6.IN1
+M0 => somador1bit:inst3.Cin
+C2 <= somador1bit:inst1.S
+C1 <= somador1bit:inst2.S
+C0 <= somador1bit:inst3.S
+CSinal <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst5|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst5|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst5|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst5|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst4
+C3 <= somador1bit:inst.S
+S => inst11.IN0
+S => inst4.IN0
+S => inst5.IN0
+S => inst6.IN0
+S => CSinal.DATAIN
+M3 => inst11.IN1
+M2 => inst4.IN1
+M1 => inst5.IN1
+M0 => inst6.IN1
+M0 => somador1bit:inst3.Cin
+C2 <= somador1bit:inst1.S
+C1 <= somador1bit:inst2.S
+C0 <= somador1bit:inst3.S
+CSinal <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst4|somador1bit:inst
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst4|somador1bit:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst4|somador1bit:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|UnidadeAritimetica:inst14|conversorEntrada:inst4|somador1bit:inst3
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst4.IN0
+Cin => inst8.IN0
+Cin => inst7.IN0
+B => inst3.IN0
+B => inst9.IN0
+B => inst7.IN1
+A => inst3.IN1
+A => inst8.IN1
+A => inst9.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|igual5bitss:inst7
+F <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[0] => inst7.IN0
+A[1] => inst1.IN0
+A[1] => inst7.IN2
+A[2] => inst2.IN0
+A[2] => inst7.IN1
+A[3] => inst3.IN0
+A[3] => inst7.IN3
+A[4] => inst4.IN0
+B[0] => inst.IN1
+B[0] => inst7.IN5
+B[1] => inst1.IN1
+B[1] => inst7.IN4
+B[2] => inst2.IN1
+B[2] => inst7.IN6
+B[3] => inst3.IN1
+B[3] => inst7.IN7
+B[4] => inst4.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1
+F <= mux4x1:inst1.F
+B[0] => inst.IN5
+B[0] => maior4bit:inst2.B[0]
+B[0] => menor4bit:inst5.B[0]
+B[1] => inst.IN4
+B[1] => maior4bit:inst2.B[1]
+B[1] => menor4bit:inst5.B[1]
+B[2] => inst.IN6
+B[2] => maior4bit:inst2.B[2]
+B[2] => menor4bit:inst5.B[2]
+B[3] => inst.IN7
+B[3] => maior4bit:inst2.B[3]
+B[3] => menor4bit:inst5.B[3]
+B[4] => mux4x1:inst1.S0
+A[0] => inst.IN0
+A[0] => maior4bit:inst2.A[0]
+A[0] => menor4bit:inst5.A[0]
+A[1] => inst.IN2
+A[1] => maior4bit:inst2.A[1]
+A[1] => menor4bit:inst5.A[1]
+A[2] => inst.IN1
+A[2] => maior4bit:inst2.A[2]
+A[2] => menor4bit:inst5.A[2]
+A[3] => inst.IN3
+A[3] => maior4bit:inst2.A[3]
+A[3] => menor4bit:inst5.A[3]
+A[4] => mux4x1:inst1.S1
+
+
+|projeto|ULA:inst|maior5sign:inst1|mux4x1:inst1
+F <= inst_final.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+S1 => inst3.IN1
+S1 => inst4.IN0
+S1 => inst2.IN1
+S0 => inst3.IN2
+S0 => inst1.IN2
+S0 => inst5.IN0
+C => inst1.IN0
+D => inst.IN0
+B => inst2.IN0
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2
+F <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => maiorrab:inst3.A
+A[1] => maiorrab:inst2.A
+A[2] => maiorrab:inst1.A
+A[3] => maiorrab:inst.A
+B[0] => maiorrab:inst3.B
+B[1] => maiorrab:inst2.B
+B[2] => maiorrab:inst1.B
+B[3] => maiorrab:inst.B
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst3
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => maiorque:inst.A
+A => menorque:inst1.A
+B => maiorque:inst.B
+B => menorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst3|maiorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst3|menorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst2
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => maiorque:inst.A
+A => menorque:inst1.A
+B => maiorque:inst.B
+B => menorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst2|maiorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst2|menorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst1
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => maiorque:inst.A
+A => menorque:inst1.A
+B => maiorque:inst.B
+B => menorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst1|maiorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst1|menorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => maiorque:inst.A
+A => menorque:inst1.A
+B => maiorque:inst.B
+B => menorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst|maiorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|maior5sign:inst1|maior4bit:inst2|maiorrab:inst|menorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5
+F <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => menorrab:inst3.A
+A[1] => menorrab:inst2.A
+A[2] => menorrab:inst1.A
+A[3] => menorrab:inst.A
+B[0] => menorrab:inst3.B
+B[1] => menorrab:inst2.B
+B[2] => menorrab:inst1.B
+B[3] => menorrab:inst.B
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst3
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => menorque:inst.A
+A => maiorque:inst1.A
+B => menorque:inst.B
+B => maiorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst3|menorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst3|maiorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst2
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => menorque:inst.A
+A => maiorque:inst1.A
+B => menorque:inst.B
+B => maiorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst2|menorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst2|maiorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst1
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => menorque:inst.A
+A => maiorque:inst1.A
+B => menorque:inst.B
+B => maiorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst1|menorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst1|maiorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => menorque:inst.A
+A => maiorque:inst1.A
+B => menorque:inst.B
+B => maiorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst|menorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|maior5sign:inst1|menor4bit:inst5|menorrab:inst|maiorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5
+F <= mux4x1:inst5.F
+B[0] => inst.IN5
+B[0] => menor4bit:inst1.B[0]
+B[0] => maior4bit:inst2.B[0]
+B[1] => inst.IN4
+B[1] => menor4bit:inst1.B[1]
+B[1] => maior4bit:inst2.B[1]
+B[2] => inst.IN6
+B[2] => menor4bit:inst1.B[2]
+B[2] => maior4bit:inst2.B[2]
+B[3] => inst.IN7
+B[3] => menor4bit:inst1.B[3]
+B[3] => maior4bit:inst2.B[3]
+B[4] => mux4x1:inst5.S0
+A[0] => inst.IN0
+A[0] => menor4bit:inst1.A[0]
+A[0] => maior4bit:inst2.A[0]
+A[1] => inst.IN2
+A[1] => menor4bit:inst1.A[1]
+A[1] => maior4bit:inst2.A[1]
+A[2] => inst.IN1
+A[2] => menor4bit:inst1.A[2]
+A[2] => maior4bit:inst2.A[2]
+A[3] => inst.IN3
+A[3] => menor4bit:inst1.A[3]
+A[3] => maior4bit:inst2.A[3]
+A[4] => mux4x1:inst5.S1
+
+
+|projeto|ULA:inst|menor5sign:inst5|mux4x1:inst5
+F <= inst_final.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+S1 => inst3.IN1
+S1 => inst4.IN0
+S1 => inst2.IN1
+S0 => inst3.IN2
+S0 => inst1.IN2
+S0 => inst5.IN0
+C => inst1.IN0
+D => inst.IN0
+B => inst2.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1
+F <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => menorrab:inst3.A
+A[1] => menorrab:inst2.A
+A[2] => menorrab:inst1.A
+A[3] => menorrab:inst.A
+B[0] => menorrab:inst3.B
+B[1] => menorrab:inst2.B
+B[2] => menorrab:inst1.B
+B[3] => menorrab:inst.B
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst3
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => menorque:inst.A
+A => maiorque:inst1.A
+B => menorque:inst.B
+B => maiorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst3|menorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst3|maiorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst2
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => menorque:inst.A
+A => maiorque:inst1.A
+B => menorque:inst.B
+B => maiorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst2|menorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst2|maiorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst1
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => menorque:inst.A
+A => maiorque:inst1.A
+B => menorque:inst.B
+B => maiorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst1|menorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst1|maiorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => menorque:inst.A
+A => maiorque:inst1.A
+B => menorque:inst.B
+B => maiorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst|menorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|menor5sign:inst5|menor4bit:inst1|menorrab:inst|maiorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2
+F <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => maiorrab:inst3.A
+A[1] => maiorrab:inst2.A
+A[2] => maiorrab:inst1.A
+A[3] => maiorrab:inst.A
+B[0] => maiorrab:inst3.B
+B[1] => maiorrab:inst2.B
+B[2] => maiorrab:inst1.B
+B[3] => maiorrab:inst.B
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst3
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => maiorque:inst.A
+A => menorque:inst1.A
+B => maiorque:inst.B
+B => menorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst3|maiorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst3|menorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst2
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => maiorque:inst.A
+A => menorque:inst1.A
+B => maiorque:inst.B
+B => menorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst2|maiorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst2|menorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst1
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => maiorque:inst.A
+A => menorque:inst1.A
+B => maiorque:inst.B
+B => menorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst1|maiorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst1|menorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst
+F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => maiorque:inst.A
+A => menorque:inst1.A
+B => maiorque:inst.B
+B => menorque:inst1.B
+C => inst2.IN1
+C => inst3.IN1
+R <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst|maiorque:inst
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst1.IN0
+
+
+|projeto|ULA:inst|menor5sign:inst5|maior4bit:inst2|maiorrab:inst|menorque:inst1
+F <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+B => inst.IN1
+
+
+|projeto|ULA:inst|and5bit:inst8
+F[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= <GND>
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst3.IN0
+A[4] => inst4.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst3.IN1
+B[4] => inst4.IN1
+
+
+|projeto|ULA:inst|xor5bit:inst10
+F[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= <GND>
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst3.IN0
+A[4] => inst4.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst3.IN1
+B[4] => inst4.IN1
+
+
+|projeto|deco_entrada_final:inst3
+D6 <= decodificador4bits:inst8.S6
+A3 => dd:inst2.A2
+A2 => dd:inst2.A1
+A1 => dd:inst2.A0
+D5 <= decodificador4bits:inst8.S5
+D4 <= decodificador4bits:inst8.S4
+D3 <= decodificador4bits:inst8.S3
+D2 <= decodificador4bits:inst8.S2
+D1 <= decodificador4bits:inst8.S1
+d0 <= decodificador4bits:inst8.S0
+U6 <= decodificador4bits:inst.S6
+A0 => dd:inst7.A0
+U5 <= decodificador4bits:inst.S5
+U4 <= decodificador4bits:inst.S4
+U3 <= decodificador4bits:inst.S3
+U2 <= decodificador4bits:inst.S2
+U1 <= decodificador4bits:inst.S1
+U0 <= decodificador4bits:inst.S0
+les <= sinal:inst9.Fs
+As => sinal:inst9.As
+
+
+|projeto|deco_entrada_final:inst3|decodificador4bits:inst8
+S3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst19.IN0
+A0 => inst20.IN0
+A0 => inst18.IN0
+A0 => inst3.IN0
+A0 => inst11.IN0
+A0 => inst8.IN0
+A0 => inst15.IN0
+A1 => inst19.IN1
+A1 => inst2.IN0
+A1 => inst18.IN1
+A1 => inst21.IN1
+A1 => inst11.IN1
+A1 => inst10.IN1
+A1 => inst14.IN1
+A1 => inst13.IN1
+A1 => inst15.IN1
+A1 => inst4.IN1
+A1 => inst6.IN1
+A2 => inst1.IN0
+A2 => inst18.IN2
+A2 => inst21.IN2
+A2 => inst17.IN2
+A2 => inst11.IN2
+A2 => inst9.IN2
+A2 => inst10.IN2
+A2 => inst14.IN2
+A2 => inst13.IN2
+A2 => inst15.IN2
+A2 => inst5.IN1
+A2 => inst6.IN2
+A3 => inst19.IN3
+A3 => dif.IN0
+A3 => inst21.IN3
+A3 => inst11.IN3
+A3 => inst10.IN3
+A3 => inst15.IN3
+A3 => inst5.IN2
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= <GND>
+S6 <= <GND>
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2
+F3 <= MUX_5:inst3.F0
+A3 => com_5:inst.A3
+A3 => somar3:inst2.A3
+A3 => MUX_5:inst3.B[3]
+A2 => com_5:inst.A2
+A2 => somar3:inst2.A2
+A2 => MUX_5:inst3.B[2]
+A1 => com_5:inst.A1
+A1 => somar3:inst2.A1
+A1 => MUX_5:inst3.B[1]
+A0 => com_5:inst.A0
+A0 => somar3:inst2.A0
+A0 => MUX_5:inst3.B[0]
+F1 <= MUX_5:inst3.F2
+F0 <= MUX_5:inst3.F3
+F2 <= MUX_5:inst3.F1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|MUX_5:inst3
+F0 <= mux_1bit:inst3.F
+maiorouigual => mux_1bit:inst3.S
+maiorouigual => mux_1bit:inst2.S
+maiorouigual => mux_1bit:inst.S
+maiorouigual => mux_1bit:inst1.S
+A_soma[3] => mux_1bit:inst.A_1
+A_soma[2] => mux_1bit:inst1.A_1
+A_soma[1] => mux_1bit:inst2.A_1
+A_soma[0] => mux_1bit:inst3.A_1
+B[3] => mux_1bit:inst.B_0
+B[2] => mux_1bit:inst1.B_0
+B[1] => mux_1bit:inst2.B_0
+B[0] => mux_1bit:inst3.B_0
+F1 <= mux_1bit:inst2.F
+F2 <= <GND>
+F3 <= mux_1bit:inst.F
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|MUX_5:inst3|mux_1bit:inst3
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|MUX_5:inst3|mux_1bit:inst2
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|MUX_5:inst3|mux_1bit:inst
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|MUX_5:inst3|mux_1bit:inst1
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|com_5:inst
+maiorouigual <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst.IN1
+A1 => inst7.IN1
+A1 => inst6.IN0
+A0 => inst.IN3
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|somar3:inst2
+F[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= soma_1:inst3.S
+F[1] <= soma_1:inst2.S
+F[0] <= soma_1:inst1.S
+A0 => soma_1:inst1.A
+A1 => soma_1:inst2.A
+A2 => soma_1:inst3.A
+A3 => soma_1:inst.A
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|somar3:inst2|soma_1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|somar3:inst2|soma_1:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|somar3:inst2|soma_1:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst3|dd:inst2|somar3:inst2|soma_1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst3|decodificador4bits:inst
+S3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst19.IN0
+A0 => inst20.IN0
+A0 => inst18.IN0
+A0 => inst3.IN0
+A0 => inst11.IN0
+A0 => inst8.IN0
+A0 => inst15.IN0
+A1 => inst19.IN1
+A1 => inst2.IN0
+A1 => inst18.IN1
+A1 => inst21.IN1
+A1 => inst11.IN1
+A1 => inst10.IN1
+A1 => inst14.IN1
+A1 => inst13.IN1
+A1 => inst15.IN1
+A1 => inst4.IN1
+A1 => inst6.IN1
+A2 => inst1.IN0
+A2 => inst18.IN2
+A2 => inst21.IN2
+A2 => inst17.IN2
+A2 => inst11.IN2
+A2 => inst9.IN2
+A2 => inst10.IN2
+A2 => inst14.IN2
+A2 => inst13.IN2
+A2 => inst15.IN2
+A2 => inst5.IN1
+A2 => inst6.IN2
+A3 => inst19.IN3
+A3 => dif.IN0
+A3 => inst21.IN3
+A3 => inst11.IN3
+A3 => inst10.IN3
+A3 => inst15.IN3
+A3 => inst5.IN2
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= <GND>
+S6 <= <GND>
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7
+F3 <= MUX_5:inst3.F0
+A3 => com_5:inst.A3
+A3 => somar3:inst2.A3
+A3 => MUX_5:inst3.B[3]
+A2 => com_5:inst.A2
+A2 => somar3:inst2.A2
+A2 => MUX_5:inst3.B[2]
+A1 => com_5:inst.A1
+A1 => somar3:inst2.A1
+A1 => MUX_5:inst3.B[1]
+A0 => com_5:inst.A0
+A0 => somar3:inst2.A0
+A0 => MUX_5:inst3.B[0]
+F1 <= MUX_5:inst3.F2
+F0 <= MUX_5:inst3.F3
+F2 <= MUX_5:inst3.F1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|MUX_5:inst3
+F0 <= mux_1bit:inst3.F
+maiorouigual => mux_1bit:inst3.S
+maiorouigual => mux_1bit:inst2.S
+maiorouigual => mux_1bit:inst.S
+maiorouigual => mux_1bit:inst1.S
+A_soma[3] => mux_1bit:inst.A_1
+A_soma[2] => mux_1bit:inst1.A_1
+A_soma[1] => mux_1bit:inst2.A_1
+A_soma[0] => mux_1bit:inst3.A_1
+B[3] => mux_1bit:inst.B_0
+B[2] => mux_1bit:inst1.B_0
+B[1] => mux_1bit:inst2.B_0
+B[0] => mux_1bit:inst3.B_0
+F1 <= mux_1bit:inst2.F
+F2 <= <GND>
+F3 <= mux_1bit:inst.F
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|MUX_5:inst3|mux_1bit:inst3
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|MUX_5:inst3|mux_1bit:inst2
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|MUX_5:inst3|mux_1bit:inst
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|MUX_5:inst3|mux_1bit:inst1
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|com_5:inst
+maiorouigual <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst.IN1
+A1 => inst7.IN1
+A1 => inst6.IN0
+A0 => inst.IN3
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|somar3:inst2
+F[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= soma_1:inst3.S
+F[1] <= soma_1:inst2.S
+F[0] <= soma_1:inst1.S
+A0 => soma_1:inst1.A
+A1 => soma_1:inst2.A
+A2 => soma_1:inst3.A
+A3 => soma_1:inst.A
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|somar3:inst2|soma_1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|somar3:inst2|soma_1:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|somar3:inst2|soma_1:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst3|dd:inst7|somar3:inst2|soma_1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst3|sinal:inst9
+Fs <= As.DB_MAX_OUTPUT_PORT_TYPE
+As => Fs.DATAIN
+
+
+|projeto|deco_entrada_final:inst1
+D6 <= decodificador4bits:inst8.S6
+A3 => dd:inst2.A2
+A2 => dd:inst2.A1
+A1 => dd:inst2.A0
+D5 <= decodificador4bits:inst8.S5
+D4 <= decodificador4bits:inst8.S4
+D3 <= decodificador4bits:inst8.S3
+D2 <= decodificador4bits:inst8.S2
+D1 <= decodificador4bits:inst8.S1
+d0 <= decodificador4bits:inst8.S0
+U6 <= decodificador4bits:inst.S6
+A0 => dd:inst7.A0
+U5 <= decodificador4bits:inst.S5
+U4 <= decodificador4bits:inst.S4
+U3 <= decodificador4bits:inst.S3
+U2 <= decodificador4bits:inst.S2
+U1 <= decodificador4bits:inst.S1
+U0 <= decodificador4bits:inst.S0
+les <= sinal:inst9.Fs
+As => sinal:inst9.As
+
+
+|projeto|deco_entrada_final:inst1|decodificador4bits:inst8
+S3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst19.IN0
+A0 => inst20.IN0
+A0 => inst18.IN0
+A0 => inst3.IN0
+A0 => inst11.IN0
+A0 => inst8.IN0
+A0 => inst15.IN0
+A1 => inst19.IN1
+A1 => inst2.IN0
+A1 => inst18.IN1
+A1 => inst21.IN1
+A1 => inst11.IN1
+A1 => inst10.IN1
+A1 => inst14.IN1
+A1 => inst13.IN1
+A1 => inst15.IN1
+A1 => inst4.IN1
+A1 => inst6.IN1
+A2 => inst1.IN0
+A2 => inst18.IN2
+A2 => inst21.IN2
+A2 => inst17.IN2
+A2 => inst11.IN2
+A2 => inst9.IN2
+A2 => inst10.IN2
+A2 => inst14.IN2
+A2 => inst13.IN2
+A2 => inst15.IN2
+A2 => inst5.IN1
+A2 => inst6.IN2
+A3 => inst19.IN3
+A3 => dif.IN0
+A3 => inst21.IN3
+A3 => inst11.IN3
+A3 => inst10.IN3
+A3 => inst15.IN3
+A3 => inst5.IN2
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= <GND>
+S6 <= <GND>
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2
+F3 <= MUX_5:inst3.F0
+A3 => com_5:inst.A3
+A3 => somar3:inst2.A3
+A3 => MUX_5:inst3.B[3]
+A2 => com_5:inst.A2
+A2 => somar3:inst2.A2
+A2 => MUX_5:inst3.B[2]
+A1 => com_5:inst.A1
+A1 => somar3:inst2.A1
+A1 => MUX_5:inst3.B[1]
+A0 => com_5:inst.A0
+A0 => somar3:inst2.A0
+A0 => MUX_5:inst3.B[0]
+F1 <= MUX_5:inst3.F2
+F0 <= MUX_5:inst3.F3
+F2 <= MUX_5:inst3.F1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|MUX_5:inst3
+F0 <= mux_1bit:inst3.F
+maiorouigual => mux_1bit:inst3.S
+maiorouigual => mux_1bit:inst2.S
+maiorouigual => mux_1bit:inst.S
+maiorouigual => mux_1bit:inst1.S
+A_soma[3] => mux_1bit:inst.A_1
+A_soma[2] => mux_1bit:inst1.A_1
+A_soma[1] => mux_1bit:inst2.A_1
+A_soma[0] => mux_1bit:inst3.A_1
+B[3] => mux_1bit:inst.B_0
+B[2] => mux_1bit:inst1.B_0
+B[1] => mux_1bit:inst2.B_0
+B[0] => mux_1bit:inst3.B_0
+F1 <= mux_1bit:inst2.F
+F2 <= <GND>
+F3 <= mux_1bit:inst.F
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|MUX_5:inst3|mux_1bit:inst3
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|MUX_5:inst3|mux_1bit:inst2
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|MUX_5:inst3|mux_1bit:inst
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|MUX_5:inst3|mux_1bit:inst1
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|com_5:inst
+maiorouigual <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst.IN1
+A1 => inst7.IN1
+A1 => inst6.IN0
+A0 => inst.IN3
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|somar3:inst2
+F[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= soma_1:inst3.S
+F[1] <= soma_1:inst2.S
+F[0] <= soma_1:inst1.S
+A0 => soma_1:inst1.A
+A1 => soma_1:inst2.A
+A2 => soma_1:inst3.A
+A3 => soma_1:inst.A
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|somar3:inst2|soma_1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|somar3:inst2|soma_1:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|somar3:inst2|soma_1:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst1|dd:inst2|somar3:inst2|soma_1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst1|decodificador4bits:inst
+S3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst19.IN0
+A0 => inst20.IN0
+A0 => inst18.IN0
+A0 => inst3.IN0
+A0 => inst11.IN0
+A0 => inst8.IN0
+A0 => inst15.IN0
+A1 => inst19.IN1
+A1 => inst2.IN0
+A1 => inst18.IN1
+A1 => inst21.IN1
+A1 => inst11.IN1
+A1 => inst10.IN1
+A1 => inst14.IN1
+A1 => inst13.IN1
+A1 => inst15.IN1
+A1 => inst4.IN1
+A1 => inst6.IN1
+A2 => inst1.IN0
+A2 => inst18.IN2
+A2 => inst21.IN2
+A2 => inst17.IN2
+A2 => inst11.IN2
+A2 => inst9.IN2
+A2 => inst10.IN2
+A2 => inst14.IN2
+A2 => inst13.IN2
+A2 => inst15.IN2
+A2 => inst5.IN1
+A2 => inst6.IN2
+A3 => inst19.IN3
+A3 => dif.IN0
+A3 => inst21.IN3
+A3 => inst11.IN3
+A3 => inst10.IN3
+A3 => inst15.IN3
+A3 => inst5.IN2
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= <GND>
+S6 <= <GND>
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7
+F3 <= MUX_5:inst3.F0
+A3 => com_5:inst.A3
+A3 => somar3:inst2.A3
+A3 => MUX_5:inst3.B[3]
+A2 => com_5:inst.A2
+A2 => somar3:inst2.A2
+A2 => MUX_5:inst3.B[2]
+A1 => com_5:inst.A1
+A1 => somar3:inst2.A1
+A1 => MUX_5:inst3.B[1]
+A0 => com_5:inst.A0
+A0 => somar3:inst2.A0
+A0 => MUX_5:inst3.B[0]
+F1 <= MUX_5:inst3.F2
+F0 <= MUX_5:inst3.F3
+F2 <= MUX_5:inst3.F1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|MUX_5:inst3
+F0 <= mux_1bit:inst3.F
+maiorouigual => mux_1bit:inst3.S
+maiorouigual => mux_1bit:inst2.S
+maiorouigual => mux_1bit:inst.S
+maiorouigual => mux_1bit:inst1.S
+A_soma[3] => mux_1bit:inst.A_1
+A_soma[2] => mux_1bit:inst1.A_1
+A_soma[1] => mux_1bit:inst2.A_1
+A_soma[0] => mux_1bit:inst3.A_1
+B[3] => mux_1bit:inst.B_0
+B[2] => mux_1bit:inst1.B_0
+B[1] => mux_1bit:inst2.B_0
+B[0] => mux_1bit:inst3.B_0
+F1 <= mux_1bit:inst2.F
+F2 <= <GND>
+F3 <= mux_1bit:inst.F
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|MUX_5:inst3|mux_1bit:inst3
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|MUX_5:inst3|mux_1bit:inst2
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|MUX_5:inst3|mux_1bit:inst
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|MUX_5:inst3|mux_1bit:inst1
+F <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst.IN0
+B_0 => inst2.IN1
+A_1 => inst.IN1
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|com_5:inst
+maiorouigual <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => inst5.IN0
+A2 => inst7.IN0
+A2 => inst.IN1
+A1 => inst7.IN1
+A1 => inst6.IN0
+A0 => inst.IN3
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|somar3:inst2
+F[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= soma_1:inst3.S
+F[1] <= soma_1:inst2.S
+F[0] <= soma_1:inst1.S
+A0 => soma_1:inst1.A
+A1 => soma_1:inst2.A
+A2 => soma_1:inst3.A
+A3 => soma_1:inst.A
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|somar3:inst2|soma_1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|somar3:inst2|soma_1:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|somar3:inst2|soma_1:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst1|dd:inst7|somar3:inst2|soma_1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ci => inst1.IN0
+Ci => inst3.IN0
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|deco_entrada_final:inst1|sinal:inst9
+Fs <= As.DB_MAX_OUTPUT_PORT_TYPE
+As => Fs.DATAIN
+
+
