@@ -50,6 +50,5 @@ Regra de Funcionamento: Os displays acendem com nível lógico 0. Eles devem ser
 <img width="586" height="277" alt="image" src="https://github.com/user-attachments/assets/a6c8e21b-8eb3-405b-9d89-23d942326711" />
 
 # Links:
-* Tabela da Verdade e Mapa de Karnaugh: https://docs.google.com/spreadsheets/d/1VzDZzGMTBDK7ysYWcsD35G4WGZj6BByjK8DRsoYJKxw/edit?usp=sharing
-* Tabelas e Mapa de Karnaugh para Unidade Aritimética: https://docs.google.com/spreadsheets/d/1-m4WqJ639HKql3GFfasfa7XLne40sfkX79NmtemCtkQ/edit?usp=sharing
-* Tabela da Verdade e Mapa de Karnaugh para Unidade Aritimética: https://docs.google.com/spreadsheets/d/1-m4WqJ639HKql3GFfasfa7XLne40sfkX79NmtemCtkQ/edit?usp=sharing
+* Tabelas da Verdade e Mapas de Karnaugh - Comparadores, Operações Lógicas e Decodificadores: https://docs.google.com/spreadsheets/d/1VzDZzGMTBDK7ysYWcsD35G4WGZj6BByjK8DRsoYJKxw/edit?usp=sharing
+* Tabelas da Verdade e Mapas de Karnaugh - Unidade Aritimética: https://docs.google.com/spreadsheets/d/1-m4WqJ639HKql3GFfasfa7XLne40sfkX79NmtemCtkQ/edit?usp=sharing
