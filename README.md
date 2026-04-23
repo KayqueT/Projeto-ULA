@@ -52,3 +52,4 @@ Regra de Funcionamento: Os displays acendem com nível lógico 0. Eles devem ser
 # Links:
 * Tabelas da Verdade e Mapas de Karnaugh - Comparadores, Operações Lógicas e Decodificadores: https://docs.google.com/spreadsheets/d/1VzDZzGMTBDK7ysYWcsD35G4WGZj6BByjK8DRsoYJKxw/edit?usp=sharing
 * Tabelas da Verdade e Mapas de Karnaugh - Unidade Aritimética: https://docs.google.com/spreadsheets/d/1-m4WqJ639HKql3GFfasfa7XLne40sfkX79NmtemCtkQ/edit?usp=sharing
+* Relatório - https://docs.google.com/document/d/1-h8u7sf6gVA3kXLN7Ea8PBzKLOP9pM6aCVeU_ULsmIA/edit?usp=drivesdk
